@@ -1,0 +1,124 @@
+#home {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 30em;
+}
+
+#hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: aliceblue;
+    position: relative;
+}
+
+#hero button {
+    position: relative;
+    font-size: 1rem;
+}
+
+#heroInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+}
+
+#heroButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#about {
+
+}
+
+#summary {
+
+}
+
+#officePics {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#collage {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1em;
+}
+
+#collage img {
+    width: 90%;
+    height: 9em;
+    object-fit: cover;
+    display: block;
+}
+
+#officePics h1 {
+
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map {
+    border: 0;
+    width: 100%;
+    height: 10em;
+}
+
+.lore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lore p {
+    width: 90%;
+}
+
+.lore img {
+    width: 90%;
+    height: 10em;
+    object-fit: cover;
+}
+
+@media (min-width: 75em) {
+    #hero h1 {
+        font-size: 4rem;
+    }
+
+    #hero button {
+        font-size: 1.5rem;
+    }
+
+    .lore {
+        flex-direction: row;
+    }
+}
