@@ -1,0 +1,22 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:whitesmoke;
+    border: solid 0.1em black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.name {
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    line-height: 1.5em;
+}

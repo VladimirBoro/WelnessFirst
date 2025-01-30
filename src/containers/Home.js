@@ -1,42 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
+import Review from "../components/Review";
 
 
 function Home() {
-    const yelpRefs = useRef([]);
-
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://www.yelp.com/embed/widgets.js";
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-
-        return () => {
-          document.body.removeChild(script);
-        };
-    }, []);
-
-    useEffect(() => {
-        yelpRefs.current[0] = ` 
-                        <span class="yelp-review" data-review-id="GteKnDDTcpeK1TfDNsKyIQ" data-hostname="www.yelp.com">
-                            Read 
-                            <a href="https://www.yelp.com/user_details?userid=xfrLxcRQxPW6D-j5ccbcQg" rel="nofollow noopener">
-                                Kristina J.
-                            </a>'s 
-                            <a href="https://www.yelp.com/biz/healing-energy-san-jose-2?hrid=GteKnDDTcpeK1TfDNsKyIQ" rel="nofollow noopener">
-                                review
-                            </a>
-                                of 
-                            <a href="https://www.yelp.com/biz/6tRcPoVxj5AUB7UegsJrUQ" rel="nofollow noopener">Healing Energy</a>
-                                on 
-                            <a href="https://www.yelp.com" rel="nofollow noopener">
-                                Yelp
-                            </a>
-                        </span>
-                    `;
-    }, [])
+    const reviewNames = [ "Kristina J.", "Abraham M.", "Igor M." ];
+    const reviewTexts = [   "Marina provides value that goes way beyond money. I have been a regular client for years, and Marina's massage therapy has truly improved the quality of my life. Early, long, excruciating menopause left me feeling crippled and falling apart; nothing helped me more to get a normal, productive life back than Marina's Healing Energy. She is extremely knowledgeable, caring, cheerful, and truly professional. The sheer amount of energy she invests in each and every massage therapy session is incredible. I've had massages on three different continents, in different countries throughout my life, and absolutely nothing compares. I will continue coming every second week for my 90-minute massage to stay healthy; I recommend Marina's Healing Energy without any reservations!",
+                            "I have polio which means I limp badly which means I have scoliosis - and I get tensed up and my body hurts. My body is asymmetric and quirky. All of which needs someone who can read my body and give very specialized treatment. Marina is an amazing body whisperer and an absolutely wonderful masseuse. I leave refreshed and relaxed with a while lot less pain every time. Give her a try and you will love her work and how you feel after.",
+                            "Marina is very professional and knowledgeable about many different massages and techniques. She is able to customize the massage based on need and target any problem areas. I always have a stiff upper back and neck, Marina is able to relieve the pain after just one session. I feel very refreshed and relaxed after her massages. My sleep and overall energy levels increase every time also. I highly recommend Marina to everyone, she is very easy to work with and schedule appointments."
+                        ]
 
     return (
         <div id={styles.home}>
@@ -81,11 +54,11 @@ function Home() {
             </div>
 
             <div id={styles.testimonials}>
-                <h2>What our customers think</h2>
+                <h2 id={styles.testimonialsTitle}>What our customers think</h2>
                 <div id={styles.reviews}>
-                    <div>
-                        <div dangerouslySetInnerHTML={{__html: yelpRefs.current[0]}}/>
-                    </div>
+                    <Review name={reviewNames[0]} text={reviewTexts[0]}/>
+                    <Review name={reviewNames[1]} text={reviewTexts[1]}/>
+                    <Review name={reviewNames[2]} text={reviewTexts[2]}/>
                 </div>
             </div>
 
