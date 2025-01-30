@@ -1,8 +1,10 @@
+/* IDs */
 #home {
     z-index: 0;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    align-items: center;
+    gap: 4em;
 }
 
 #hero {
@@ -47,11 +49,13 @@
 }
 
 #about {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#summary {
-
+#about img {
+    border-radius: 0.5em;
 }
 
 #officePics {
@@ -71,24 +75,17 @@
 
 #collage img {
     width: 90%;
-    height: 9em;
+    height: 100%;
+    border-radius: 0.5em;
     object-fit: cover;
     display: block;
 }
 
-#officePics h1 {
-
-}
-
 #testimonials {
-    margin: 1em 0 1em 0;
+    /* margin: 1em 0 1em 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#testimonialsTitle {
-    margin-bottom: 1em;
 }
 
 #reviews {
@@ -101,26 +98,42 @@
 #map {
     border: 0;
     width: 100%;
-    height: 10em;
+    height: 12em;
 }
 
-.lore {
+#lore1, #lore2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.lore p {
+#lore1 p, #lore2 p {
     width: 90%;
 }
 
-.lore img {
+#lore1 p {
+    margin-top: 0;
+}
+
+#lore1 img, #lore2 img {
     width: 90%;
-    height: 10em;
+    height: 15em;
     object-fit: cover;
 }
 
+#contact {
+    width: 90%;
+}
+
+/* CLASSES */
+.sectionTitle {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* MEDIA Qs */
 @media (min-width: 75em) {
     #hero h1 {
         font-size: 4rem;
@@ -130,7 +143,42 @@
         font-size: 1.5rem;
     }
 
-    .lore {
+    #about {
+        width: 55em;
+    }
+
+    #lore1 {
         flex-direction: row;
+        gap: 2em;
+    }
+
+
+    #lore2 {
+        flex-direction: row-reverse;
+        gap: 2em;
+    }
+
+    #reviews {
+        flex-direction: row;
+        justify-content: center;
+        width: 55em;
+    }
+
+    #officePics {
+        width: 55em;
+    }
+
+    #collage {
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+    }
+
+    #collage img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #contact {
+        width: 55em;
     }
 }

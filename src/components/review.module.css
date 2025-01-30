@@ -1,7 +1,5 @@
 .review {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 20rem;
     background-color:whitesmoke;
     border: solid 0.1em black;
     border-radius: 1em;
@@ -19,4 +17,13 @@
 
 .text {
     line-height: 1.5em;
+    font-size: 0.9em;
+    margin: 0.5em 0 0 0;
+}
+
+@media (min-width: 75em) {
+    .review {
+        width: 35%;
+        height: auto;
+    }
 }

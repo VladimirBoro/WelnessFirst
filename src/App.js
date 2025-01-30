@@ -8,7 +8,8 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import styles from './App.module.css';
 
-
+// TODO: darkmode toggle
+// TODO: update/upgrade footer
 function App() {
   return (
     <div id={styles.app}>

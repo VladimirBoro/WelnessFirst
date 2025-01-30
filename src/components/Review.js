@@ -10,15 +10,17 @@ function Review( {name, text} ) {
 
     return (
         <div className={styles.review}>
-            <h2 className={styles.name}>
-                {name}
-            </h2>
-            <div className={styles.rating}>
-                <img src={star}/>
-                <img src={star}/>
-                <img src={star}/>
-                <img src={star}/>
-                <img src={star}/>
+            <div>
+                <h2 className={styles.name}>
+                    {name}
+                </h2>
+                <div className={styles.rating}>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                    <img src={star}/>
+                </div>
             </div>
             <p className={styles.text}>
                 {text}
