@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import LightDarkToggle from "./DarkLightToggle";
-import HamburgerIcon from '../../assets/icons/burger-menu.svg';
-// import HomeIcon from '../../assets/icons/home.svg';
-// import ContactIcon from '../../assets/icons/contact.svg';
-// import MassageIcon from '../../assets/icons/massage-service.svg';
-// import AboutIcon from '../../assets/icons/about.svg';
+import { useTheme } from '../../ThemeContext';
 import HealingHands from '../../assets/icons/healing_hands_small.png';
 import styles from './nav.module.css';
 
 function Nav() {
     const [open, setOpen] = useState(false);
     const [navHide, setNavHide] = useState(styles.hidden);
+    const { theme } = useTheme();
+    const [hamburgerColor, setHamburgerColor] = useState(theme);
 
+    useEffect(() => {
+        setHamburgerColor(() => theme);
+    }, [theme])
 
     // hook even listener for handling clicking away from the open nav bar to close it
     useEffect(() => {
@@ -20,13 +21,12 @@ function Nav() {
             const mobileNav = document.getElementById(styles.nav);
             const button = document.getElementById(styles.hamburgerIcon);
             const toggle = document.querySelector(`#${styles.icons} :nth-child(2)`);
-            // const toggle = toggleParent.children[1]; // hardcode 1 because we know it is second child
-            const hamburgPic = document.getElementById("hamburg");
+            const hamburgPic = document.querySelector(".hamburg").className.baseVal;
             const darkLightPic = document.getElementById("darkLightPic");
 
-            console.log("WOOOO", e.target, toggle);
+            const selectedClass = e.target.className.baseVal;
 
-            if (open && e.target !== mobileNav && e.target !== button && e.target !== hamburgPic && e.target != toggle && e.target != darkLightPic) {
+            if (open && e.target !== mobileNav && e.target !== button && selectedClass !== hamburgPic && e.target != toggle && e.target != darkLightPic) {
                 setOpen(false);
             }
         }
@@ -67,25 +67,32 @@ function Nav() {
             </Link>
             <div id={styles.links} className={navHide}>
                 <Link to="/" className={styles.navItemContainer}>
-                    {/* <img src={HomeIcon} className={styles.navIcon}/> */}
                     Home
                 </Link>
                 <Link to="/about" className={styles.navItemContainer}>
-                    {/* <img src={AboutIcon} className={styles.navIcon}/> */}
                     About
                 </Link>
                 <Link to="/services" className={styles.navItemContainer}>
-                    {/* <img src={MassageIcon} className={styles.navIcon}/> */}
                     Services
                 </Link>
                 <Link to="/contact" className={styles.navItemContainer}>
-                    {/* <img src={ContactIcon} className={styles.navIcon}/> */}
                     Contact
                 </Link>
             </div>
             <div id={styles.icons}>
                 <button type='button' id={styles.hamburgerIcon} onClick={handleClick}>
-                    <img src={HamburgerIcon} id="hamburg"/>
+                    <svg
+                        width="2.5em"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="hamburg"
+                    >
+                        <path d="M4 18L20 18" stroke={hamburgerColor === "light" ? "black" : "white"} strokeWidth="2" strokeLinecap="round" className="hamburg" />
+                        <path d="M4 12L20 12" stroke={hamburgerColor === "light" ? "black" : "white"} strokeWidth="2" strokeLinecap="round" className="hamburg" />
+                        <path d="M4 6L20 6" stroke={hamburgerColor === "light" ? "black" : "white"} strokeWidth="2" strokeLinecap="round" className="hamburg" />
+                    </svg>
                 </button>
                 <LightDarkToggle />
             </div>

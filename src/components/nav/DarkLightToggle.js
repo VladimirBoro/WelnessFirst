@@ -10,16 +10,16 @@ function DarkLightToggle() {
 
     useEffect(() => {
         if (theme === "light") {
-            setThemeIcon(lightMode);
+            setThemeIcon(darkMode);
         }
         else {
-            setThemeIcon(darkMode);
+            setThemeIcon(lightMode);
         }
     }, [theme]);
 
     return (
         <button id={styles.toggle} onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}>
-            <img id="darkLightPic" src={themeIcon} />
+            <img id="darkLightPic" src={themeIcon} alt="dark mode toggle"/>
         </button>
     )
 }

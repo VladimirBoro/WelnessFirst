@@ -43,10 +43,13 @@ button {
   padding: 0.75rem;
   border: none;
   background-color: var(--button-bg-color);
-  border: 0.1em solid #fefef1;
   color: #fefef1;
   transition: background-color 0.05s ease-in-out,
               box-shadow 0.1s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 button:active {

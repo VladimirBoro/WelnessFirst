@@ -9,6 +9,7 @@
 }
 
 #toggle:hover {
+    cursor: pointer;
     background-color: none;
 }
 
