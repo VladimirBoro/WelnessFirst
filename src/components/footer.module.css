@@ -4,7 +4,7 @@
     align-items: center;
     font-size: 0.75rem;
     text-align: center;
-    background-color: rgba(245, 245, 230);
+    background-color: var(--bar-bg-color);
 }
 
 #info, #copyright {

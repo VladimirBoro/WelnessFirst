@@ -1,6 +1,6 @@
 .review {
     height: 20rem;
-    background-color:whitesmoke;
+    background-color:var(--bar-bg-color);
     border: solid 0.1em black;
     border-radius: 1em;
     padding: 0.5em;

@@ -25,7 +25,7 @@
 
 #hero h1 {
     font-size: 2.5rem;
-    color: aliceblue;
+    color: var(--bg-color);
     position: relative;
 }
 
@@ -131,7 +131,6 @@
     margin-bottom: 1em;
     text-align: center;
 }
-
 
 /* MEDIA Qs */
 @media (min-width: 75em) {

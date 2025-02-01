@@ -17,7 +17,7 @@ function Home() {
                 <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
                 // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 <div id={styles.heroInfo}>
-                    <h1>Your destination for healing</h1>
+                    <h1 style={{color: "#fefef1"}}>Your destination for healing</h1>
                     <div id={styles.heroButtons}>
                         <button>Contact</button>
                         <button>Services</button>

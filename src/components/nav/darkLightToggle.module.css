@@ -1,0 +1,18 @@
+#toggle {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#toggle img {
+    width: 2em;
+}
+
+#toggle:hover {
+    background-color: none;
+}
+
+#toggle:active {
+    box-shadow: none;
+    background-color: none;
+}
