@@ -4,13 +4,11 @@ import { ThemeProvider } from './ThemeContext';
 import About from './containers/About';
 import Contact from './containers/Contact';
 import Home from './containers/Home';
-import Services from './containers/Services';
+import Services from './containers/service/Services';
 import Nav from './components/nav/Nav';
 import Footer from './components/Footer';
 import styles from './App.module.css';
 
-// TODO: darkmode toggle
-// TODO: update/upgrade footer
 function App() {
   return (
     <ThemeProvider>

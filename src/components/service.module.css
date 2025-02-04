@@ -1,0 +1,5 @@
+.service {
+    background-color: var(--bar-bg-color);
+    border-radius: 1em;
+    padding: 0 1em 0 1em;
+}

@@ -1,0 +1,33 @@
+#servicePage {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#servicesList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    width: 90%;
+    margin-bottom: 3em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    margin-top: 1.5em;
+}
+
+@media (min-width: 75em) {    
+    #servicesList {
+        width: 55em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
