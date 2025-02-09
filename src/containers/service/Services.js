@@ -10,7 +10,7 @@ function Services() {
             <h1 id={styles.title}>Our Services</h1>
             <div id={styles.contact}>
                 <p style={{marginTop: "0"}}>By Appointment only</p>
-                <Link>
+                <Link to="/contact">
                     <button>Contact</button>
                 </Link>   
             </div>
