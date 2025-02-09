@@ -19,8 +19,12 @@ function Home() {
                 <div id={styles.heroInfo}>
                     <h1 style={{color: "#fefef1"}}>Your destination for healing</h1>
                     <div id={styles.heroButtons}>
-                        <button>Contact</button>
-                        <button>Services</button>
+                        <Link to="/contact">
+                            <button>Contact</button>
+                        </Link>
+                        <Link to="/services">
+                            <button>Services</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -58,6 +62,9 @@ function Home() {
                     <Review name={reviewNames[1]} text={reviewTexts[1]}/>
                     <Review name={reviewNames[2]} text={reviewTexts[2]}/>
                 </div>
+                <a style={{marginTop: "1em"}} href="https://www.yelp.com/biz/healing-energy-san-jose-2">
+                    Check out what other customers think on our yelp page!
+                </a>
             </div>
 
             <div id={styles.officePics}>
@@ -78,15 +85,14 @@ function Home() {
                 </div>
             </div>
 
-            <div id={styles.contact}>
-                <iframe id={styles.map} 
-                    loading="lazy" 
-                    // allowfFullScreen 
+            <div id={styles.mapContainer}>
+                <iframe id={styles.map}
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
                     src={process.env.REACT_APP_GOOGLE_MAP_KEY}>
-
                 </iframe>
             </div>
-
         </div>
     );
 }
