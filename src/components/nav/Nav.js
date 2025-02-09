@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
-import LightDarkToggle from "./DarkLightToggle";
+import { Link, NavLink } from "react-router-dom";
 import { useTheme } from '../../ThemeContext';
+import LightDarkToggle from "./DarkLightToggle";
 import HealingHands from '../../assets/icons/healing_hands_small.png';
 import styles from './nav.module.css';
 
@@ -61,23 +61,23 @@ function Nav() {
 
     return (
         <div id={styles.nav}>
-            <Link id={styles.brand}>
+            <Link to="/" id={styles.brand}>
                 <img src={HealingHands} id={styles.healingHands}/>
                 <h4>Welness First</h4>
             </Link>
             <div id={styles.links} className={navHide}>
-                <Link to="/" className={styles.navItemContainer}>
-                    Home
-                </Link>
-                <Link to="/about" className={styles.navItemContainer}>
-                    About
-                </Link>
-                <Link to="/services" className={styles.navItemContainer}>
-                    Services
-                </Link>
-                <Link to="/contact" className={styles.navItemContainer}>
-                    Contact
-                </Link>
+            <NavLink to="/" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link} end>
+                Home
+            </NavLink>
+            <NavLink to="/about" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                About
+            </NavLink>
+            <NavLink to="/services" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                Services
+            </NavLink>
+            <NavLink to="/contact" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                Contact
+            </NavLink>
             </div>
             <div id={styles.icons}>
                 <button type='button' id={styles.hamburgerIcon} onClick={handleClick}>

@@ -6,7 +6,7 @@
     width: 1.5em;
 }
 
-.navItemContainer {
+.link {
     display: flex;
     justify-content: left;
     align-content: center;
@@ -15,7 +15,23 @@
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.25rem;
-    margin-left: 1em;
+    margin-right: 1em;
+    background-image: linear-gradient(var(--button-bg-color), var(--button-bg-color));
+    background-size: 0% 0.1rem;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.15s ease-in-out, color 0.1s ease-in-out;
+}
+
+.link:hover {
+    color: var(--button-bg-color);
+    background-size: 100% 0.1rem;
+}
+
+.active {
+    color: var(--button-bg-color);
+    background-size: 100% 0.1rem;
 }
 
 #brand {
@@ -30,7 +46,6 @@
 #nav {
     display: flex;
     justify-content: space-between;
-    position: absolute;
     height: inherit;
     width: 90%;
 }
@@ -64,6 +79,7 @@
     flex-direction: column;
     gap: 0.75em;
     justify-content: left;
+    padding: 0.5em 0 0 1em;
     height: 100vh;
     width: 60vw;
     background-color: var(--bar-bg-color);
@@ -101,8 +117,7 @@
         justify-content: flex-end;
         background-color: transparent;
         padding-top: 0;
-        gap: 1em;
-        padding-top: 0;
+        gap: 1em; 
         transition: none;
         width: 100%;
         padding-right: 2em;
