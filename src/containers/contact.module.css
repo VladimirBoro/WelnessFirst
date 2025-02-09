@@ -1,0 +1,51 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+#howToContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+#howToContact p {
+    margin: 0 0 0.5em 0;
+}
+
+#whereToFind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+#map {
+    border: 0;
+    border-radius: 1em;
+    width: 100%;
+    height: 16em;
+    margin-bottom: 4em;
+}
+
+@media (min-width: 75em) {
+    #contact {
+        height: 100%;
+        justify-content: center;
+        /* align-items: baseline; */
+        /* flex-direction: row; */
+    }
+
+    #howToContact {
+        width: 55em;
+    }
+
+    #whereToFind {
+        width: 55em;
+    }
+
+
+}
