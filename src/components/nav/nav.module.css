@@ -24,14 +24,8 @@
     transition: background-size 0.15s ease-in-out, color 0.1s ease-in-out;
 }
 
-.link:hover {
-    color: var(--button-bg-color);
-    background-size: 100% 0.1rem;
-}
-
 .active {
     color: var(--button-bg-color);
-    background-size: 100% 0.1rem;
 }
 
 #brand {
@@ -131,6 +125,15 @@
     
     #nav {
         display: flex;
+    }
+
+    .link:hover {
+        color: var(--button-bg-color);
+        background-size: 100% 0.1rem;
+    }
+    
+    .active {
+        background-size: 100% 0.1rem;
     }
 }
 
