@@ -96,6 +96,7 @@
 @media (min-width: 50em) {
     #links {
         width: 44vw;
+        transform: translate(56vw, 3.5em);
     }
 }
 
