@@ -6,6 +6,7 @@
 
 #toggle img {
     width: 2em;
+    border-radius: 1em;
 }
 
 #toggle:hover {
@@ -15,5 +16,10 @@
 
 #toggle:active {
     box-shadow: none;
-    background-color: none;
+    background-color: transparent;
+}
+
+#toggle img:active {
+    background-color: black;
+    filter: brightness(0);
 }

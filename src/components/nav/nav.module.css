@@ -24,7 +24,11 @@
     transition: background-size 0.15s ease-in-out, color 0.1s ease-in-out;
 }
 
-.active {
+.link:visited {
+    color: var(--text-color);
+}
+
+.active, .active:visited {
     color: var(--button-bg-color);
 }
 
@@ -95,7 +99,8 @@
 
 @media (min-width: 50em) {
     #links {
-        width: 44vw;
+        /* width: 44vw; */
+        transform: translate(45vw, 3.5em);
     }
 }
 

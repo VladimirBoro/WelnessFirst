@@ -7,4 +7,25 @@
 .contents {
     border-radius: 1em;
     background-color: var(--bar-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+}
+
+.description {
+    margin: 0.5em 0;
+}
+
+@media (min-width: 50em) {
+    .contents {
+        height: 10em;
+    }
+}
+
+@media (min-width: 75em) {
+    .contents {
+        height: 15em;
+    }
+    
 }
