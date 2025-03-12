@@ -1,10 +1,10 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './ThemeContext';
-import About from './containers/About';
-import Contact from './containers/Contact';
-import Home from './containers/Home';
-import Services from './containers/service/Services';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Services from './pages/service/Services';
 import Nav from './components/nav/Nav';
 import Footer from './components/Footer';
 import styles from './App.module.css';
