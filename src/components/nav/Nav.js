@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
-import { useTheme } from '../../ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 import LightDarkToggle from "./DarkLightToggle";
 import HealingHands from '../../assets/icons/healing_hands_small.png';
 import styles from './nav.module.css';

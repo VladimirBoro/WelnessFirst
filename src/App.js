@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';

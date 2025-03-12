@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./darkLightToggle.module.css";
-import { useTheme } from '../../ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 import darkMode from '../../assets/icons/lightToggle/dark-mode.svg';
 import lightMode from '../../assets/icons/lightToggle/light-mode.svg';
 
