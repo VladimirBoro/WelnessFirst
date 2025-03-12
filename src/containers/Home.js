@@ -1,7 +1,17 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import Review from "../components/Review";
+import waitingRoomImage from "../assets/images/sized/wait_room2.jpg";
+import roomEntranceImage from "../assets/images/sized/room_back_angle.jpg";
+import roomBackAngle from "../assets/images/sized/room_back_angle2.jpg";
+import roomAngle3 from "../assets/images/sized/room_angle3.jpg";
+import certsImage from "../assets/images/sized/certs.jpg";
+import certs2Image from "../assets/images/sized/certs2.jpg";
+import happyBuddhaImage from "../assets/images/sized/happy_buddha.jpg";
+import wallAdornmentImage from "../assets/images/sized/wall_adornment.jpg";
+import mountainsImage from "../assets/images/sized/mountains_banner.jpg";
+
 
 
 function Home() {
@@ -14,8 +24,7 @@ function Home() {
     return (
         <div id={styles.home}>
             <div id={styles.hero}>
-                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <img src={mountainsImage} />
                 <div id={styles.heroInfo}>
                     <h1 style={{color: "#fefef1"}}>Your destination for healing</h1>
                     <div id={styles.heroButtons}>
@@ -30,33 +39,27 @@ function Home() {
             </div>
 
             <div id={styles.about}>
-                <h2 className={styles.sectionTitle}>About Us</h2>
+                <h1 className={styles.sectionTitle}>About</h1>
                 <div id={styles.lore1}>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada, eros eget 
-                        scelerisque tristique, justo tellus laoreet felis, dignissim viverra est ex eu urna. 
-                        Quisque tristique vel quam vitae molestie. Sed interdum ipsum id felis accumsan vestibulum. 
-                        Aliquam fermentum malesuada consectetur. Vestibulum vitae dui nulla. Cras ac interdum nibh. 
-                        Vestibulum pretium enim sem, eget convallis diam vehicula semper.
+                        Welcome to Welness First! I'm Marina Borodianski, a dedicated massage therapist passionate about helping clients relax, heal, and feel their 
+                        best. With over 20 years of experience, I specialize in a variety of massage techniques, including deep tissue, neuromuscular therapy, Shiatsu and more. 
+                        Through the inclusion of psychosomatic therapy, I'm able to address the root cause of your pain and provide a holistic approach to healing.
                     </p>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    <img src={certsImage}/>
                 </div>
                 <div id={styles.lore2}>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada, eros eget 
-                        scelerisque tristique, justo tellus laoreet felis, dignissim viverra est ex eu urna. 
-                        Quisque tristique vel quam vitae molestie. Sed interdum ipsum id felis accumsan vestibulum. 
-                        Aliquam fermentum malesuada consectetur. Vestibulum vitae dui nulla. Cras ac interdum nibh. 
-                        Vestibulum pretium enim sem, eget convallis diam vehicula semper.
+                        Every session is designed to promote well-being, whether you're seeking stress relief, muscle recovery, or simply a moment of relaxation. 
+                        I take pride in offering professional, personalized massages that leave you feeling refreshed and restored.  Book an appointment today and 
+                        experience the difference!
                     </p>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    <img src={happyBuddhaImage}/>
                 </div>
             </div>
 
             <div id={styles.testimonials}>
-                <h2 className={styles.sectionTitle}>What our customers think</h2>
+                <h1 className={styles.sectionTitle}>What customers think</h1>
                 <div id={styles.reviews}>
                     <Review name={reviewNames[0]} text={reviewTexts[0]}/>
                     <Review name={reviewNames[1]} text={reviewTexts[1]}/>
@@ -68,20 +71,14 @@ function Home() {
             </div>
 
             <div id={styles.officePics}>
-                <h2 className={styles.sectionTitle}>Our office</h2>
+                <h1 className={styles.sectionTitle}>Our Office</h1>
                 <div id={styles.collage}>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?fm=jpg&amp;q=60&amp;
-                    // w=3000&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                    <img src={roomBackAngle} alt="massage room"/>
+                    <img src={roomEntranceImage} alt="massage room"/>
+                    <img src={roomAngle3} alt="massage room"/>
+                    <img src={waitingRoomImage} alt="waiting room"/>
+                    <img src={certs2Image} alt="certifactions on wall"/>
+                    <img src={wallAdornmentImage} alt="wall decoration"/>
                 </div>
             </div>
 
