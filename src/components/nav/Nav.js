@@ -66,18 +66,18 @@ function Nav() {
                 <h4>Welness First</h4>
             </Link>
             <div id={styles.links} className={navHide}>
-            <NavLink to="/" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link} end>
-                Home
-            </NavLink>
-            <NavLink to="/about" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
-                About
-            </NavLink>
-            <NavLink to="/services" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
-                Services
-            </NavLink>
-            <NavLink to="/contact" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
-                Contact
-            </NavLink>
+                <NavLink to="/" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link} end>
+                    Home
+                </NavLink>
+                <NavLink to="/about" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                    About
+                </NavLink>
+                <NavLink to="/services" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                    Services
+                </NavLink>
+                <NavLink to="/contact" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
+                    Contact
+                </NavLink>
             </div>
             <div id={styles.icons}>
                 <button type='button' id={styles.hamburgerIcon} onClick={handleClick}>
