@@ -16,10 +16,4 @@
 
 #toggle:active {
     box-shadow: none;
-    background-color: transparent;
-}
-
-#toggle img:active {
-    background-color: black;
-    filter: brightness(0);
 }
