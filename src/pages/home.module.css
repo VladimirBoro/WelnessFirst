@@ -147,7 +147,7 @@
 }
 
 /* MEDIA Qs */
-@media (min-width: 75em) {
+@media (min-width: 63em) {
     #hero {
         height: 40em;
     }
@@ -191,7 +191,6 @@
 
     #collage {
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows: repeat(2, 1fr); */
     }
 
     #collage img {

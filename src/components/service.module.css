@@ -23,7 +23,7 @@
     }
 }
 
-@media (min-width: 75em) {
+@media (min-width: 63em) {
     .contents {
         height: 15em;
     }

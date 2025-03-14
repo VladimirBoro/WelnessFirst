@@ -29,7 +29,7 @@
     margin-top: 1.5em;
 }
 
-@media (min-width: 75em) {    
+@media (min-width: 63em) {    
     #servicesList {
         width: 55em;
         grid-template-columns: repeat(2, 1fr);
