@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/welnessfirst/static/css/main.6a4f4c69.css",
+    "main.js": "/welnessfirst/static/js/main.7ea22373.js",
+    "static/media/portrait.jpg": "/welnessfirst/static/media/portrait.758d5e336bbfad63bb00.jpg",
+    "static/media/front_left.jpg": "/welnessfirst/static/media/front_left.5655aa12e624cccf3ede.jpg",
+    "static/media/certs.jpg": "/welnessfirst/static/media/certs.8921cdc5e355e1b917ef.jpg",
+    "static/media/certs2.jpg": "/welnessfirst/static/media/certs2.8921cdc5e355e1b917ef.jpg",
+    "static/media/hallway.jpg": "/welnessfirst/static/media/hallway.d9c75ca3d1228baa3761.jpg",
+    "static/media/room_back_angle.jpg": "/welnessfirst/static/media/room_back_angle.583b5dcb45c8018eadf6.jpg",
+    "static/media/wait_room2.jpg": "/welnessfirst/static/media/wait_room2.2b565bb2faa87acfdba9.jpg",
+    "static/media/wall_adornment.jpg": "/welnessfirst/static/media/wall_adornment.22655ce11e5c0a18512d.jpg",
+    "static/media/room_angle3.jpg": "/welnessfirst/static/media/room_angle3.779f4e2169cc3276c56c.jpg",
+    "static/media/room_back_angle2.jpg": "/welnessfirst/static/media/room_back_angle2.9cc518f69e61f8d62f1f.jpg",
+    "static/media/entrance.jpg": "/welnessfirst/static/media/entrance.dab73d6a295db6bdd023.jpg",
+    "static/media/happy_buddha.jpg": "/welnessfirst/static/media/happy_buddha.5364a9a432dbd7c28ed2.jpg",
+    "static/media/mountains_banner.jpg": "/welnessfirst/static/media/mountains_banner.4bb733d927809b2005c9.jpg",
+    "static/media/healing_hands_small.png": "/welnessfirst/static/media/healing_hands_small.0a6bf0a75b47b2066561.png",
+    "static/media/reiki_cert.jpg": "/welnessfirst/static/media/reiki_cert.68037fa107c0c9ee740a.jpg",
+    "static/media/massage_cert.jpg": "/welnessfirst/static/media/massage_cert.ac4cea9d883f4510f69f.jpg",
+    "static/media/myoskeletal_cert.jpg": "/welnessfirst/static/media/myoskeletal_cert.d942251c076a9c411696.jpg",
+    "static/media/phoenix_cert.jpg": "/welnessfirst/static/media/phoenix_cert.38b62242480306f7c415.jpg",
+    "static/media/lomilomi_cert.jpg": "/welnessfirst/static/media/lomilomi_cert.36db8f811fc3ae9b2224.jpg",
+    "static/media/isha_cert.jpg": "/welnessfirst/static/media/isha_cert.8cd910237e32c1334737.jpg",
+    "static/media/nikken_cert.jpg": "/welnessfirst/static/media/nikken_cert.387976161a82bdb2746d.jpg",
+    "static/media/message.jpg": "/welnessfirst/static/media/message.ad3f7521a69cc7653305.jpg",
+    "index.html": "/welnessfirst/index.html",
+    "static/media/light-mode.svg": "/welnessfirst/static/media/light-mode.f0902178bf1c8b6ca06c7e9d11ef1cf0.svg",
+    "static/media/dark-mode.svg": "/welnessfirst/static/media/dark-mode.c60b14fb02ad92705fc320c69a8f1fde.svg",
+    "main.6a4f4c69.css.map": "/welnessfirst/static/css/main.6a4f4c69.css.map",
+    "main.7ea22373.js.map": "/welnessfirst/static/js/main.7ea22373.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a4f4c69.css",
+    "static/js/main.7ea22373.js"
+  ]
+}
