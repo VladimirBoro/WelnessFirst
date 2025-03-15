@@ -42,8 +42,7 @@
 }
 
 .paragraph {
-    text-indent: 2em;
-    margin: 0 0 0.1em 0;
+    margin: 0 0 1em 0;
 }
 
 .image {
@@ -72,10 +71,10 @@
     }
 
     .articleSection {
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         gap: 1em;
-        width: 80%;
+        width: 40em;
     }
 
     .paragraphs {
