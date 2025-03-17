@@ -1,5 +1,5 @@
-# 🌿 WellnessFirst 
-A modern, responsive **React web application** for a wellness-focused business.  
+# 🌿 wellnessfirst.com 
+A modern, responsive **React web application** for a wellness-focused business "Healing Energy".  
 This project includes a **multi-page website** with services, an about section, and a contact form.  
 It is deployed using **GitHub Pages** and integrates **Google Analytics** for tracking visits.
 
