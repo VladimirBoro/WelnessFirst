@@ -4,7 +4,7 @@ This project includes a **multi-page website** with services, an about section, 
 It is deployed using **GitHub Pages** and integrates **Google Analytics** for tracking visits.
 
 ## Link
-Check out the live site here: **[WellnessFirst on GitHub Pages](https://welnessfirst.com)**
+Check out the live site here: **(https://welnessfirst.com)**
 
 ## ✨ Features
 - **Multi-page navigation** using `react-router-dom`  
