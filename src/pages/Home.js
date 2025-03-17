@@ -42,7 +42,7 @@ function Home() {
                 <h1 className={styles.sectionTitle}>About</h1>
                 <div id={styles.lore1}>
                     <p>
-                        Welcome to Welness First! I'm Marina Borodianski, a dedicated massage therapist passionate about helping clients relax, heal, and feel their 
+                        Welcome to Healing Energy! I'm Marina Borodianski, a dedicated massage therapist passionate about helping clients relax, heal, and feel their 
                         best. With over 20 years of experience, I specialize in a variety of massage techniques, including deep tissue, neuromuscular therapy, Shiatsu and more. 
                         Through the inclusion of psychosomatic therapy, I'm able to address the root cause of your pain and provide a holistic approach to healing.
                     </p>
