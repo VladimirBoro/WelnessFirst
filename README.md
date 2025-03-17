@@ -19,5 +19,5 @@ Check out the live site here: **[WellnessFirst on GitHub Pages](https://welnessf
 **Deployment:** GitHub Pages  
 
 ## License  
-This project is proprietary and licensed exclusively to [Client Name].  
+This project is proprietary and licensed exclusively to Marina Borodianski.  
 Redistribution, modification, or commercial use is prohibited without permission.
