@@ -4,10 +4,6 @@ import star from "../assets/icons/web/star.png"
 
 function Review( {name, text} ) {
 
-    const stars = () => {
-
-    }
-
     return (
         <div className={styles.review}>
             <div>
