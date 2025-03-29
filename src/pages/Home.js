@@ -10,7 +10,7 @@ import certsImage from "../assets/images/sized/certs.jpg";
 import certs2Image from "../assets/images/sized/certs2.jpg";
 import happyBuddhaImage from "../assets/images/sized/happy_buddha.jpg";
 import wallAdornmentImage from "../assets/images/sized/wall_adornment.jpg";
-import mountainsImage from "../assets/images/sized/mountains_banner.jpg";
+import mountainsImage from "../assets/images/sized/mountains_banner_2.jpeg";
 
 
 
