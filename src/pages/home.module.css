@@ -127,7 +127,13 @@
 #lore1 img, #lore2 img {
     width: 90%;
     height: 19em;
-    object-fit:cover;
+    object-fit: cover;
+}
+
+img#signs {
+    width: 90%;
+    height: 19em;
+    object-fit: contain;
 }
 
 #contact {

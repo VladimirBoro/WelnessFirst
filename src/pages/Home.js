@@ -8,7 +8,7 @@ import roomBackAngle from "../assets/images/sized/room_back_angle2.jpg";
 import roomAngle3 from "../assets/images/sized/room_angle3.jpg";
 import certsImage from "../assets/images/sized/certs.jpg";
 import certs2Image from "../assets/images/sized/certs2.jpg";
-import happyBuddhaImage from "../assets/images/sized/happy_buddha.jpg";
+import signsForAMassageImage from "../assets/images/sized/signs_for_massage.jpg";
 import wallAdornmentImage from "../assets/images/sized/wall_adornment.jpg";
 import mountainsImage from "../assets/images/sized/mountains_banner_2.jpeg";
 
@@ -24,7 +24,7 @@ function Home() {
     return (
         <div id={styles.home}>
             <div id={styles.hero}>
-                <img src={mountainsImage} />
+                <img src={mountainsImage} alt="mountains in nepal"/>
                 <div id={styles.heroInfo}>
                     <h1 style={{color: "#fefef1"}}>Your destination for healing</h1>
                     <div id={styles.heroButtons}>
@@ -46,7 +46,7 @@ function Home() {
                         best. With over 20 years of experience, I specialize in a variety of massage techniques, including deep tissue, neuromuscular therapy, Shiatsu and more. 
                         Through the inclusion of psychosomatic therapy, I'm able to address the root cause of your pain and provide a holistic approach to healing.
                     </p>
-                    <img src={certsImage}/>
+                    <img src={certsImage} alt="certifications on wall"/>
                 </div>
                 <div id={styles.lore2}>
                     <p>
@@ -54,7 +54,8 @@ function Home() {
                         I take pride in offering professional, personalized massages that leave you feeling refreshed and restored.  Book an appointment today and 
                         experience the difference!
                     </p>
-                    <img src={happyBuddhaImage}/>
+                    {/* <img src={happyBuddhaImage}/> */}
+                    <img id={styles.signs} src={signsForAMassageImage} alt="signs you need a massage"/>
                 </div>
             </div>
 
@@ -84,6 +85,7 @@ function Home() {
 
             <div id={styles.mapContainer}>
                 <iframe id={styles.map}
+                    title="Google Maps location"
                     loading="lazy"
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
