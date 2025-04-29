@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import data from "./data";
 import Service from "../../components/Service";
 import styles from "./services.module.css";
+import howToPrepareImage from "../../assets/images/sized/prepare_for_massage.JPG";
 
 function Services() {
     return (
@@ -14,6 +15,7 @@ function Services() {
                     <button>Contact</button>
                 </Link>   
             </div>
+            <img src={howToPrepareImage} id={styles.img} alt="How to prepare for a massage"/>
             <div id={styles.servicesList}>
                 {data.map((obj, index) => (
                     <Service key={index} title={obj.title} description={obj.description} prices={obj.prices}/>
