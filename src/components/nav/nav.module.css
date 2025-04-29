@@ -97,10 +97,10 @@
     gap: 1em;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
     #links {
-        /* width: 44vw; */
-        transform: translate(45vw, 3.5em);
+        width: 46vw;
+        transform: translate(47vw, 3.5em);
     }
 }
 
